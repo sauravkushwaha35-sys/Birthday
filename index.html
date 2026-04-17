@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>✨ Happy Birthday Nishchay Kr Patel ✨</title>
+  <!-- Google Fonts for elegant & playful typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;500;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at 20% 30%, #1a1f35, #0b0e1a);
+      overflow-x: hidden;
+      position: relative;
+      color: #fff;
+    }
+
+    /* ANIMATED BACKGROUND GRADIENT (aurora effect) */
+    .bg-aurora {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      background: linear-gradient(125deg, #2b1b3a, #1c2a4f, #2a3f5e, #1e3a4d);
+      background-size: 400% 400%;
+      animation: auroraFlow 18s ease infinite;
+      opacity: 0.75;
+    }
+
+    @keyframes auroraFlow {
+      0% { background-position: 0% 50% }
+      50% { background-position: 100% 50% }
+      100% { background-position: 0% 50% }
+    }
+
+    /* STARFIELD overlay (complex subtle sparkles) */
+    .starfield {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: transparent;
+      pointer-events: none;
+    }
+
+    .star {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+      opacity: 0.7;
+      animation: twinkle 4s infinite alternate;
+    }
+
+    @keyframes twinkle {
+      0% { opacity: 0.2; transform: scale(1); }
+      100% { opacity: 1; transform: scale(1.3); }
+    }
+
+    /* MAIN CONTENT — glassmorphism card */
+    .content {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem 1.5rem;
+      backdrop-filter: blur(2px);
+    }
+
+    .birthday-card {
+      max-width: 950px;
+      width: 100%;
+      background: rgba(20, 30, 45, 0.35);
+      backdrop-filter: blur(14px) saturate(180%);
+      -webkit-backdrop-filter: blur(14px) saturate(180%);
+      border: 2px solid rgba(255, 215, 150, 0.25);
+      border-radius: 64px 24px 64px 24px;
+      box-shadow: 0 30px 50px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 200, 100, 0.2) inset, 0 0 30px rgba(255, 180, 40, 0.3);
+      padding: 3.5rem 2.5rem;
+      text-align: center;
+      transform: perspective(1200px) rotateX(1deg);
+      transition: transform 0.3s ease, box-shadow 0.4s;
+      animation: floatCard 6s ease-in-out infinite;
+    }
+
+    .birthday-card:hover {
+      box-shadow: 0 40px 70px rgba(0, 0, 0, 0.7), 0 0 0 2px rgba(255, 220, 140, 0.5) inset, 0 0 50px #ffb86b;
+      transform: perspective(1200px) rotateX(0deg) scale(1.01);
+    }
+
+    @keyframes floatCard {
+      0% { transform: perspective(1200px) rotateX(1deg) translateY(0px); }
+      50% { transform: perspective(1200px) rotateX(1.5deg) translateY(-12px); }
+      100% { transform: perspective(1200px) rotateX(1deg) translateY(0px); }
+    }
+
+    /* TYPOGRAPHY */
+    .greeting {
+      font-family: 'Dancing Script', cursive;
+      font-size: 4.5rem;
+      font-weight: 700;
+      text-shadow: 0 5px 15px #00000050, 0 0 30px #ffd966, 0 0 60px #ff9f2e;
+      background: linear-gradient(135deg, #ffe6b0, #ffb347, #ffdab9);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
+      animation: glowPulse 3s infinite;
+    }
+
+    @keyframes glowPulse {
+      0%, 100% { filter: drop-shadow(0 0 10px #ffb347); }
+      50% { filter: drop-shadow(0 0 25px #ffdd99); }
+    }
+
+    .name {
+      font-size: 4.2rem;
+      font-weight: 700;
+      font-family: 'Quicksand', sans-serif;
+      text-transform: uppercase;
+      background: linear-gradient(120deg, #fcee9f, #ffd27f, #ffb88c);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: 6px;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 10px 25px #00000060;
+      animation: nameShine 5s infinite;
+    }
+
+    @keyframes nameShine {
+      0%, 100% { text-shadow: 0 0 15px #ffbb77, 0 0 30px #ff9933; }
+      50% { text-shadow: 0 0 25px #ffe29c, 0 0 55px #ffb347; }
+    }
+
+    .wish-text {
+      font-size: 1.8rem;
+      font-weight: 300;
+      line-height: 1.5;
+      color: #f3e9d2;
+      text-shadow: 0 2px 8px #00000080;
+      margin: 25px 0 30px;
+      background: rgba(0, 0, 0, 0.15);
+      padding: 20px 30px;
+      border-radius: 60px 20px 60px 20px;
+      backdrop-filter: blur(4px);
+      border-left: 6px solid #ffbb77;
+      border-right: 6px solid #ffbb77;
+    }
+
+    .cake-container {
+      margin: 25px auto 15px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* CSS 3D CAKE — complex decoration */
+    .cake {
+      position: relative;
+      width: 260px;
+      height: 200px;
+      filter: drop-shadow(0 15px 20px #00000050);
+    }
+
+    .plate {
+      position: absolute;
+      bottom: -5px;
+      left: -15px;
+      width: 290px;
+      height: 30px;
+      background: radial-gradient(circle at 30% 20%, #e0e0e0, #b0b0b0);
+      border-radius: 50%;
+      box-shadow: 0 8px 0 #6b6b6b, 0 15px 20px #00000060;
+      border-bottom: 4px solid #aaa;
+    }
+
+    .layer-bottom {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      width: 220px;
+      height: 70px;
+      background: linear-gradient(145deg, #d28b5e, #b86b3c);
+      border-radius: 20px 20px 30px 30px;
+      box-shadow: 0 12px 0 #7a4225, 0 20px 25px #00000040, inset 0 -5px 10px #f5d6b3;
+      border-bottom: 4px solid #f0c8a0;
+    }
+
+    .layer-middle {
+      position: absolute;
+      bottom: 80px;
+      left: 35px;
+      width: 190px;
+      height: 60px;
+      background: linear-gradient(145deg, #f3d9c2, #e7b88e);
+      border-radius: 18px 18px 25px 25px;
+      box-shadow: 0 10px 0 #b47b56, 0 18px 20px #00000030, inset 0 -4px 8px #fff3e6;
+      border-bottom: 3px solid #ffebd6;
+    }
+
+    .layer-top {
+      position: absolute;
+      bottom: 130px;
+      left: 55px;
+      width: 150px;
+      height: 50px;
+      background: linear-gradient(145deg, #ffe0bd, #fccb9c);
+      border-radius: 20px 20px 25px 25px;
+      box-shadow: 0 10px 0 #b47b56, 0 15px 15px #00000030, inset 0 -3px 8px #fff7ef;
+      border-bottom: 3px solid #fff0dd;
+    }
+
+    .frosting {
+      position: absolute;
+      bottom: 170px;
+      left: 45px;
+      width: 170px;
+      height: 25px;
+      background: radial-gradient(circle at 30% 10%, #ffeac2, #ffcf9a);
+      border-radius: 50% 50% 30% 30% / 60% 60% 20% 20%;
+      box-shadow: 0 5px 0 #c9946a, inset 0 5px 8px #ffffff90;
+      z-index: 2;
+    }
+
+    .candle {
+      position: absolute;
+      bottom: 190px;
+      left: 115px;
+      width: 18px;
+      height: 45px;
+      background: linear-gradient(135deg, #fff5e0, #fdd49c);
+      border-radius: 8px 8px 4px 4px;
+      box-shadow: 0 5px 0 #b38b60, inset -3px 0 6px #ffe5c2;
+      z-index: 5;
+    }
+
+    .flame {
+      position: absolute;
+      bottom: 230px;
+      left: 118px;
+      width: 12px;
+      height: 24px;
+      background: radial-gradient(circle at 35% 25%, #fff7b0, #ffa726, #ff6f00);
+      border-radius: 60% 40% 50% 50% / 60% 50% 40% 40%;
+      box-shadow: 0 0 20px #ffb347, 0 0 40px #ff8c00;
+      animation: flicker 1.2s infinite alternate;
+      z-index: 6;
+    }
+
+    @keyframes flicker {
+      0% { transform: scale(1) rotate(-2deg); opacity: 0.9; box-shadow: 0 0 18px #ffa500; }
+      100% { transform: scale(1.1) rotate(3deg); opacity: 1; box-shadow: 0 0 30px #ffcc66, 0 0 50px #ff8c00; }
+    }
+
+    .sprinkles {
+      position: absolute;
+      bottom: 140px;
+      left: 50px;
+      width: 160px;
+      height: 20px;
+      z-index: 3;
+    }
+    .sprinkle {
+      position: absolute;
+      width: 8px;
+      height: 4px;
+      background: #ff6b9d;
+      border-radius: 4px;
+      transform: rotate(20deg);
+      box-shadow: 0 0 5px #ffb3c6;
+    }
+
+    /* BUTTON */
+    .celebrate-btn {
+      background: linear-gradient(145deg, #ffc58a, #ffa04c);
+      border: none;
+      padding: 18px 48px;
+      border-radius: 60px;
+      font-size: 1.9rem;
+      font-weight: 700;
+      font-family: 'Quicksand', sans-serif;
+      color: #1e1e2f;
+      text-shadow: 0 2px 5px #ffeac1;
+      box-shadow: 0 15px 0 #a1582b, 0 10px 30px #00000060, 0 0 20px #ffbb77;
+      cursor: pointer;
+      transition: all 0.15s;
+      margin: 30px 0 10px;
+      letter-spacing: 3px;
+      border: 2px solid #ffddbb;
+      transform: perspective(400px) rotateX(2deg);
+    }
+
+    .celebrate-btn:hover {
+      transform: perspective(400px) rotateX(0deg) translateY(-3px);
+      box-shadow: 0 12px 0 #a1582b, 0 20px 40px #00000080, 0 0 35px #ffcc88;
+      background: linear-gradient(145deg, #ffd9a3, #ffb35c);
+    }
+
+    .celebrate-btn:active {
+      transform: translateY(8px);
+      box-shadow: 0 5px 0 #7a4225, 0 10px 25px black;
+    }
+
+    /* FLOATING BALLOONS — complex positioning & animations */
+    .balloon {
+      position: fixed;
+      bottom: -150px;
+      width: 80px;
+      height: 100px;
+      background: radial-gradient(circle at 30% 25%, #fff 10%, #ff6b8b 80%);
+      border-radius: 50% 50% 40% 40%;
+      box-shadow: inset -10px -8px 15px #b33b5e, 0 10px 20px #00000040;
+      z-index: 5;
+      opacity: 0.8;
+      animation: floatBalloon 14s infinite ease-in-out;
+      pointer-events: none;
+    }
+
+    .balloon::before {
+      content: "";
+      position: absolute;
+      bottom: -18px;
+      left: 35px;
+      width: 2px;
+      height: 35px;
+      background: #aa8c7e;
+      box-shadow: 0 0 5px #aa8c7e;
+      transform: rotate(2deg);
+    }
+
+    .balloon::after {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      left: 30px;
+      width: 14px;
+      height: 18px;
+      background: #e0b09c;
+      border-radius: 2px 30% 30% 2px;
+      transform: skewX(-10deg);
+    }
+
+    /* balloon variations */
+    .balloon2 { left: 8%; background: radial-gradient(circle at 30% 20%, #fff, #5aa9e6); animation-duration: 16s; width: 90px; height: 110px; }
+    .balloon3 { left: 25%; background: radial-gradient(circle at 35% 25%, #fff, #7bdf7b); animation-duration: 18s; width: 70px; height: 90px; animation-delay: -2s; }
+    .balloon4 { left: 70%; background: radial-gradient(circle at 25% 30%, #fff, #d9a0f0); animation-duration: 20s; width: 100px; height: 120px; }
+    .balloon5 { left: 85%; background: radial-gradient(circle at 30% 20%, #fff, #f9ca7f); animation-duration: 15s; width: 75px; height: 95px; animation-delay: -5s; }
+    .balloon6 { left: 50%; background: radial-gradient(circle at 25% 25%, #fff, #ff8aae); animation-duration: 22s; width: 85px; height: 105px; animation-delay: -9s; }
+
+    @keyframes floatBalloon {
+      0% { bottom: -150px; transform: translateX(0) rotate(0deg); opacity: 0.7; }
+      50% { transform: translateX(25px) rotate(6deg); opacity: 0.9; }
+      100% { bottom: 120%; transform: translateX(-15px) rotate(-8deg); opacity: 0; }
+    }
+
+    /* FOOTER */
+    .footer-note {
+      margin-top: 30px;
+      color: #ffeecd;
+      font-size: 1.3rem;
+      text-shadow: 0 2px 8px black;
+      font-weight: 300;
+    }
+
+    /* CONFETTI CANVAS */
+    #confetti-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 100;
+    }
+
+    /* responsiveness */
+    @media (max-width: 600px) {
+      .greeting { font-size: 3rem; }
+      .name { font-size: 2.5rem; letter-spacing: 3px; }
+      .wish-text { font-size: 1.3rem; }
+      .birthday-card { padding: 2rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- animated background layers -->
+  <div class="bg-aurora"></div>
+  <div class="starfield" id="starfield"></div>
+
+  <!-- floating balloons (complex decoration) -->
+  <div class="balloon balloon1" style="left: 5%;"></div>
+  <div class="balloon balloon2"></div>
+  <div class="balloon balloon3"></div>
+  <div class="balloon balloon4"></div>
+  <div class="balloon balloon5"></div>
+  <div class="balloon balloon6"></div>
+
+  <!-- main birthday content -->
+  <div class="content">
+    <div class="birthday-card">
+      <div class="greeting">🎂 Happy Birthday! 🎉</div>
+      <div class="name">Nishchay Kr Patel</div>
+      
+      <div class="wish-text">
+        ✨ Wishing you a day as incredible as you are! <br>
+        May joy, laughter, and success follow you everywhere. <br>
+        Stay blessed & keep shining! ✨
+      </div>
+
+      <!-- 3D Cake illustration -->
+      <div class="cake-container">
+        <div class="cake">
+          <div class="plate"></div>
+          <div class="layer-bottom"></div>
+          <div class="layer-middle"></div>
+          <div class="layer-top"></div>
+          <div class="frosting"></div>
+          <div class="candle"></div>
+          <div class="flame"></div>
+          <div class="sprinkles">
+            <div class="sprinkle" style="top:5px; left:20px; background:#ffb3ba;"></div>
+            <div class="sprinkle" style="top:2px; left:60px; background:#bae1ff;"></div>
+            <div class="sprinkle" style="top:10px; left:100px; background:#baffc9;"></div>
+            <div class="sprinkle" style="top:8px; left:130px; background:#ffffba;"></div>
+          </div>
+        </div>
+      </div>
+
+      <button class="celebrate-btn" id="celebrateBtn">🎈 Celebrate! 🎈</button>
+      <div class="footer-note">— with lots of love and confetti —</div>
+    </div>
+  </div>
+
+  <!-- canvas for confetti (complex continuous effect + burst) -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <script>
+    (function() {
+      "use strict";
+
+      // ---- STARFIELD GENERATION (complex background sparkles) ----
+      function generateStars() {
+        const starfield = document.getElementById('starfield');
+        for (let i = 0; i < 120; i++) {
+          const star = document.createElement('div');
+          star.className = 'star';
+          const size = Math.random() * 5 + 2;
+          star.style.width = size + 'px';
+          star.style.height = size + 'px';
+          star.style.left = Math.random() * 100 + '%';
+          star.style.top = Math.random() * 100 + '%';
+          star.style.animationDelay = Math.random() * 5 + 's';
+          star.style.animationDuration = (Math.random() * 3 + 3) + 's';
+          star.style.background = `radial-gradient(circle, #fff8e7, #ffe0b3)`;
+          starfield.appendChild(star);
+        }
+      }
+      generateStars();
+
+      // ---- ADVANCED CONFETTI SYSTEM (continuous rain + burst) ----
+      const canvas = document.getElementById('confetti-canvas');
+      const ctx = canvas.getContext('2d');
+      let width = window.innerWidth;
+      let height = window.innerHeight;
+      let particles = [];
+      
+      const PARTICLE_COUNT = 140;  // continuous rain
+      const COLORS = [
+        '#FFC0CB', '#FFD700', '#FF6B9D', '#7BDF7B', '#5AA9E6', '#D9A0F0', '#F9CA7F', '#FF8AAE'
+      ];
+
+      function resizeCanvas() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+      }
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      function random(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+
+      // Particle class
+      class ConfettiParticle {
+        constructor() {
+          this.reset();
+          // randomize y so they don't all start at top
+          this.y = random(-height * 0.2, height);
+        }
+        reset() {
+          this.x = random(0, width);
+          this.y = random(-height * 0.3, -20);
+          this.size = random(6, 16);
+          this.speedX = random(-1.8, 1.8);
+          this.speedY = random(2.5, 6.5);
+          this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
+          this.rotation = random(0, 360);
+          this.rotationSpeed = random(-4, 4);
+          this.shape = Math.random() > 0.5 ? 'rect' : 'circle'; // variety
+        }
+        update() {
+          this.x += this.speedX;
+          this.y += this.speedY;
+          this.rotation += this.rotationSpeed;
+          
+          // slight wind effect
+          this.speedX += random(-0.05, 0.05);
+          
+          if (this.y > height + 50 || this.x < -50 || this.x > width + 50) {
+            this.reset();
+            this.y = -20;
+          }
+        }
+        draw() {
+          ctx.save();
+          ctx.translate(this.x, this.y);
+          ctx.rotate((this.rotation * Math.PI) / 180);
+          ctx.fillStyle = this.color;
+          ctx.shadowColor = '#fff5d0';
+          ctx.shadowBlur = 12;
+          
+          if (this.shape === 'rect') {
+            ctx.fillRect(-this.size/2, -this.size/4, this.size, this.size/1.5);
+          } else {
+            ctx.beginPath();
+            ctx.arc(0, 0, this.size/2, 0, 2*Math.PI);
+            ctx.fill();
+          }
+          ctx.restore();
+        }
+      }
+
+      // initialize particles
+      for (let i = 0; i < PARTICLE_COUNT; i++) {
+        particles.push(new ConfettiParticle());
+      }
+
+      // burst confetti: adds extra particles temporarily
+      function addConfettiBurst(count = 80) {
+        for (let i = 0; i < count; i++) {
+          const burstParticle = new ConfettiParticle();
+          burstParticle.x = width / 2 + random(-100, 100);
+          burstParticle.y = height / 2 - 50 + random(-60, 60);
+          burstParticle.speedX = random(-7, 7);
+          burstParticle.speedY = random(-5, 2);
+          burstParticle.size = random(8, 20);
+          burstParticle.color = COLORS[Math.floor(Math.random() * COLORS.length)];
+          particles.push(burstParticle);
+        }
+        // limit total particles to avoid lag (keep around 250)
+        if (particles.length > 300) {
+          particles.splice(0, particles.length - 250);
+        }
+      }
+
+      // animation loop
+      function animateConfetti() {
+        ctx.clearRect(0, 0, width, height);
+        
+        for (let p of particles) {
+          p.update();
+          p.draw();
+        }
+        requestAnimationFrame(animateConfetti);
+      }
+      animateConfetti();
+
+      // initial welcome burst
+      setTimeout(() => addConfettiBurst(60), 300);
+      setTimeout(() => addConfettiBurst(40), 900);
+
+      // ---- CELEBRATE BUTTON (burst + extra balloons effect) ----
+      const btn = document.getElementById('celebrateBtn');
+      btn.addEventListener('click', () => {
+        addConfettiBurst(120);
+        
+        // temporary extra balloons (complex gesture)
+        const extraBalloon = document.createElement('div');
+        extraBalloon.className = 'balloon';
+        extraBalloon.style.left = random(10, 80) + '%';
+        extraBalloon.style.background = `radial-gradient(circle at 30% 20%, #fff, ${COLORS[Math.floor(Math.random()*COLORS.length)]})`;
+        extraBalloon.style.animation = 'floatBalloon 8s forwards';
+        extraBalloon.style.zIndex = '8';
+        document.body.appendChild(extraBalloon);
+        setTimeout(() => extraBalloon.remove(), 8000);
+        
+        // subtle vibration effect
+        document.querySelector('.birthday-card').style.animation = 'none';
+        setTimeout(() => document.querySelector('.birthday-card').style.animation = 'floatCard 6s ease-in-out infinite', 20);
+      });
+
+      // click anywhere for more joy (optional but fun)
+      document.body.addEventListener('dblclick', () => {
+        addConfettiBurst(50);
+      });
+
+      // resize handling for confetti
+      window.addEventListener('resize', () => {
+        resizeCanvas();
+      });
+
+      // adjust confetti on orientation change
+      window.addEventListener('orientationchange', () => {
+        setTimeout(resizeCanvas, 30);
+      });
+
+      // ---- additional tiny detail: name glow update (complex) ----
+      const nameEl = document.querySelector('.name');
+      setInterval(() => {
+        if (Math.random() > 0.6) {
+          nameEl.style.textShadow = '0 0 30px #ffbb77, 0 0 60px #ff884d';
+        } else {
+          nameEl.style.textShadow = '0 0 20px #ffe29c, 0 0 45px #ffb347';
+        }
+      }, 800);
+    })();
+  </script>
+</body>
+</html>
